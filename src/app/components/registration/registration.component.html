@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-3">
+      <div class="card mt-4">
+        <div class="card-header bg-info">
+          <h3>Registration ->{{ cDate | currency : "USD" }}</h3>
+        </div>
+        <div class="card-body">
+          <form (submit)="handleSubmit()">
+            <div class="form-group">
+              <label for="">Serial Number</label>
+              <input
+                name="sno"
+                [(ngModel)]="employee.sno"
+                type="number"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <label for="">Username</label>
+              <input
+                name="usename"
+                [(ngModel)]="employee.name"
+                type="text"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <label for="">Designation</label>
+              <select
+                name="designation"
+                [(ngModel)]="employee.designation"
+                class="form-control"
+              >
+                <option value="">--Select--</option>
+                <option value="SW ENG">SW ENG</option>
+                <option value="HW ENG">HW ENG</option>
+              </select>
+            </div>
+
+            <div class="form-group form-check">
+              <input
+                name="isActive"
+                [(ngModel)]="employee.isActive"
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >Is Active</label
+              >
+            </div>
+            <input type="submit" class="btn btn-success" value="Register" />
+          </form>
+        </div>
+      </div>
+      <pre>{{ employee | json }}</pre>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="col-md-3">
+    <div class="card mt-4">
+      <div class="card-header bg-info">
+        <h4>Two way binding ex</h4>
+      </div>
+      <div class="card-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputEmail1"
+              placeholder="Enter usename"
+              name="username"
+              [(ngModel)]="username"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="card-footer">
+      <h2>{{ username }}</h2>
+    </div>
+  </div>
+</div>
