@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="col-md-3">
+    <div class="card mt-4">
+      <div class="card-header bg-info">
+        <h4>{{ heading }} --- {{ counter }}</h4>
+      </div>
+      <div class="card-body">
+        <img [src]="imgUL" alt="testimg" />
+      </div>
+      <p #car1>SUV CAR</p>
+    </div>
+    <button (click)="handleClick()" class="btn btn-info">Click</button>
+
+    <button (click)="handleClick1(car1)" class="btn btn-info">Click</button>
+  </div>
+
+  <!-- template binding -->
+</div>
