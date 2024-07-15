@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="col-md-3">
+    <div class="card mt-4">
+      <div class="card-header" [ngClass]="isActive ? 'bg-success' : 'bg-dark'">
+        <h4>{{ heading }}</h4>
+      </div>
+      <div class="card-body">
+        <p [style.color]="isActive ? 'red' : 'blue'">
+          {{ para }}
+        </p>
+      </div>
+      <button class="btn btn-danger">Click me</button>
+    </div>
+  </div>
+</div>
