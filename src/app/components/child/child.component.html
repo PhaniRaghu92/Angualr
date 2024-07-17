@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 mt-4">
+      <div class="card">
+        <div class="card-header bg-success text-white">Child</div>
+        <div class="card-body bg-warning text-dark">
+          <h6>Child body</h6>
+          <form class="p-3 bg-secondary">
+            <div class="form-group">
+              <label class="form-label">Enter your input</label>
+              <input
+                name="childInputData"
+                [(ngModel)]="childInputData"
+                type="text"
+                class="form-control"
+                (input)="sendDataToParent()"
+              />
+            </div>
+            <!-- <button (click)="sendDataToParent()" class="btn btn-success">
+              Send to Parent
+            </button> -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 mt-3">
+      <div class="card">
+        <div class="card-header bg-info text-white">
+          <h4>Child Component</h4>
+        </div>
+        <div class="card-body">
+          <p>Child releated stuff</p>
+
+          <p>DATA FROM PARENT is: {{ parentData }}</p>
+          <p>DATA FROM PARENT INPUT TEXT BOX is: {{ pInputText }}</p>
+        </div>
+        <div>
+          {{ employee | json }}
+        </div>
+
+        <button (click)="handleChildBtnClick()" class="btn btn-success btn-sm">
+          Send to Parent
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

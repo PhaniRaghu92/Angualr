@@ -9,6 +9,10 @@ import { EventbindingexComponent } from './components/eventbindingex/eventbindin
 import { TwowaybindingexComponent } from './components/twowaybindingex/twowaybindingex.component';
 import { FormsModule } from '@angular/forms';
 import { RegistrationComponent } from './components/registration/registration.component';
+import { ParentSimpleComponent } from './components/parent-simple/parent-simple.component';
+import { ChildSimpleComponent } from './components/child-simple/child-simple.component';
+import { ParentComponent } from './components/parent/parent.component';
+import { ChildComponent } from './components/child/child.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +22,10 @@ import { RegistrationComponent } from './components/registration/registration.co
     EventbindingexComponent,
     TwowaybindingexComponent,
     RegistrationComponent,
+    ParentSimpleComponent,
+    ChildSimpleComponent,
+    ParentComponent,
+    ChildComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

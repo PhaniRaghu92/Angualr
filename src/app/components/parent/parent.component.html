@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 mt-4">
+      <div class="card">
+        <div class="card-header bg-danger text-white">PARENT</div>
+        <div class="card-body bg-info text-light">
+          <h6>Parent body</h6>
+          <h5>DATA RECIVED IS :: {{ childData }}</h5>
+          <br />
+          <hr />
+          <app-child (sendToParent)="childData = $event"></app-child>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
