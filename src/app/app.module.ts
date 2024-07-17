@@ -13,6 +13,7 @@ import { ParentSimpleComponent } from './components/parent-simple/parent-simple.
 import { ChildSimpleComponent } from './components/child-simple/child-simple.component';
 import { ParentComponent } from './components/parent/parent.component';
 import { ChildComponent } from './components/child/child.component';
+import { CondstmtsComponent } from './components/condstmts/condstmts.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ChildComponent } from './components/child/child.component';
     ChildSimpleComponent,
     ParentComponent,
     ChildComponent,
+    CondstmtsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

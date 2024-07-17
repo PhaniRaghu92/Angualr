@@ -1,0 +1,71 @@
+<div class="container">
+  <div class="col-md-6">
+    <h2>ngIF</h2>
+
+    <div class="card">
+      <div class="card-header bg-primary text-white">
+        <h4>Welcome</h4>
+      </div>
+      <div class="card-body">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
+          provident?
+        </p>
+
+        <button
+          *ngIf="!isActive"
+          (click)="handleLoginClick()"
+          class="btn btn-primary"
+        >
+          Login
+        </button>
+        <button
+          *ngIf="isActive"
+          (click)="handleLogoutClick()"
+          class="btn btn-danger"
+        >
+          Logout
+        </button>
+      </div>
+    </div>
+
+    <div class="card mt-4">
+      <div class="card-header bg-info text-white">
+        <h4>*ngFor</h4>
+      </div>
+
+      <div class="card-body">
+        <ul class="list-group">
+          <li
+            class="list-group-item"
+            *ngFor="let phani of colors"
+            [ngClass]="phani.color === 'green' ? 'active' : ''"
+          >
+            {{ phani.color }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="">
+      <table class="table table-striped">
+        <thead>
+          <th>ID</th>
+          <th>COLOR</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let phani of colors">
+            <td [style.color]="phani.id >= 200 ? 'red' : ''">
+              {{ phani.id }}
+            </td>
+            <td [ngClass]="phani.id === 400 ? 'bg-success' : ''">
+              {{ phani.color }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
