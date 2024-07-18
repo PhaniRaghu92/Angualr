@@ -14,9 +14,11 @@
             SendToChild
           </button>
           <p>{{ childhardCodeDText }}</p>
+          <h3>Phani ParentToChild Learning {{ParentToChild}}</h3>
           <app-child-simple
             [parentData]="pdata"
             [pInputText]="parentInputText"
+            [childProp]="ParentToChild"
             (childInfoText)="childhardCodeDText = $event"
           />
           <!-- <app-child-simple [parentData]="pdata1" [emp]="empObj" /> -->

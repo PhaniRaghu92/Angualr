@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="">
+      <div class="col mt-4">
+        <div class="card">
+          <div class="card-header bg-success text-white">Child Two</div>
+          <div class="card-body bg-warning text-dark">
+            <h6>Child two body</h6>
+            <p>Data Received from child one:: {{receivedFromParent}}</p>
+            <form class="p-3 bg-secondary">
+              <div class="form-group">
+                <label class="form-label">Enter your input</label>
+                <input
+                  name="childOneProp"
+                  [(ngModel)]="childTwoProp"
+                  type="text"
+                  class="form-control"
+                  (input)="sendDataToParentFromChildTwo()"               
+                />
+              </div> 
+              <!-- <button (click)="sendDataToParentFromChildTwo()" class="btn btn-success">
+                Send to Parent
+              /button>  -->
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

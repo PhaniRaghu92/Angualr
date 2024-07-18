@@ -16,6 +16,8 @@ export class ChildSimpleComponent {
     designation: '',
   };
 
+  @Input() public childProp:string = '';
+
   //output
 
   @Output() public childInfoText = new EventEmitter(); //1

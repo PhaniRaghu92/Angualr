@@ -6,6 +6,7 @@ import { IEmpoyee } from '../models/IEmployee';
   templateUrl: './parent-simple.component.html',
   styleUrl: './parent-simple.component.css',
 })
+
 export class ParentSimpleComponent {
   public pdata: string = 'This is from parent';
   public pdata1: string = 'this is  some test';
@@ -13,13 +14,15 @@ export class ParentSimpleComponent {
   public parentInput: string = '';
   public parentInputText: string = '';
 
+  public ParentToChild:string = 'Parent to Test';
+
   public childhardCodeDText: string = '';
 
   public empObj: IEmpoyee = {
     name: 'TEST',
     designation: 'PARENT TEST ENG',
     isActive: false,
-    sno: 1234,
+    sno: 143,
   };
 
   sendToChild(): void {

@@ -13,6 +13,9 @@ import { ParentSimpleComponent } from './components/parent-simple/parent-simple.
 import { ChildSimpleComponent } from './components/child-simple/child-simple.component';
 import { ParentComponent } from './components/parent/parent.component';
 import { ChildComponent } from './components/child/child.component';
+import { ParentComplexComponent } from './components/parent-complex/parent-complex.component';
+import { ChildComplexOneComponent } from './components/child-complex-one/child-complex-one.component';
+import { ChildComplexTwoComponent } from './components/child-complex-two/child-complex-two.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +29,9 @@ import { ChildComponent } from './components/child/child.component';
     ChildSimpleComponent,
     ParentComponent,
     ChildComponent,
+    ParentComplexComponent,
+    ChildComplexOneComponent,
+    ChildComplexTwoComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

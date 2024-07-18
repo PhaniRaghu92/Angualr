@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="card mx-auto">
+        <div class="card-header bg-danger text-white">PARENT</div>
+        <div class="card-body bg-info text-light">
+          <h5>DATA RECIVED FROM CHILD ONE IS :: {{ receivedFromChildOne }}</h5>
+          <h5>DATA RECIVED FROM CHILD TWO IS :: {{ receivedFromChildTwo }}</h5>         
+          <div class="d-flex">
+            <div class="">
+              <app-child-complex-one
+                (sendToParentFromChildOne)="receivedFromChildOne = $event"
+                [receivedFromChildTwo]="receivedFromChildTwo"
+              />
+            </div>
+            <div>
+              <app-child-complex-two
+                [receivedFromParent]="receivedFromChildOne"
+                (sendToParentFromChildTwo)="receivedFromChildTwo = $event"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
