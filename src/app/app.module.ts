@@ -19,6 +19,8 @@ import { ChildComplexTwoComponent } from './components/child-complex-two/child-c
 import { HomeComponent } from './components/routing/home/home.component';
 import { AboutComponent } from './components/routing/about/about.component';
 import { ContactComponent } from './components/routing/contact/contact.component';
+import { EmployeelistComponent } from './components/employeelist/employeelist.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -38,8 +40,9 @@ import { ContactComponent } from './components/routing/contact/contact.component
     HomeComponent,
     AboutComponent,
     ContactComponent,
+    EmployeelistComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

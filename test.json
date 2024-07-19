@@ -1,0 +1,46 @@
+{
+  "employees": [
+    {
+      "sno": 101,
+      "name": "test1",
+      "isActive": true,
+      "designation": "HW ENG"
+    },
+    {
+      "sno": 102,
+      "name": "test2",
+      "isActive": false,
+      "designation": "TESTER"
+    },
+    {
+      "sno": 103,
+      "name": "test3",
+      "isActive": true,
+      "designation": "MANAGER"
+    },
+    {
+      "sno": 104,
+      "name": "test4",
+      "isActive": false,
+      "designation": "DEVELOPER"
+    },
+    {
+      "sno": 105,
+      "name": "test5",
+      "isActive": true,
+      "designation": "Programmer"
+    },
+    {
+      "sno": 106,
+      "name": "test6",
+      "isActive": false,
+      "designation": "HR"
+    },
+    {
+      "sno": 107,
+      "name": "test7",
+      "isActive": true,
+      "designation": "Assistant Mgr"
+    }
+  ]
+}

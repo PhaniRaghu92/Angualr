@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <pre>{{ data | json }}></pre>
+      <table class="table">
+        <thead>
+          <th>SNO</th>
+          <th>NAME</th>
+          <th>Active</th>
+          <th>Designation</th>
+        </thead>
+        <tbody>
+          <!-- <tr
+            *ngFor="let emp of data; let i = index"          
+            [style.background]="!emp.isActive ? 'grey' : ''"
+          > -->
+          <tr
+            *ngFor="let emp of data; let i = index"
+            [ngClass]="!emp.isActive ? 'bg-warning text-success' : ''"
+          >
+            <td>{{ emp.sno }}</td>
+            <td>{{ emp.name }}</td>
+            <td>{{ emp.isActive }}</td>
+            <td>{{ emp.designation }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
